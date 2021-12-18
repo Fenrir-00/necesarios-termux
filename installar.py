@@ -38,7 +38,7 @@ def instalar():
  termux.system("apt install php")
  termux.system("apt install python2")
  termux.system(" apt install git")
- termux.system("apt install curl"
+ termux.system("apt install curl")
  termux.system(" pip install --upgrade pip")
  termux.system("pip2 install --upgrade pip")
  termux.system("pip install threaded")
