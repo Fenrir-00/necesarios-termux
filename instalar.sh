@@ -71,6 +71,7 @@ sleep 1
 echo -e "${greenColour}Tsu ...................................................[✓] Instalado ${endColour}"
 else
 pkg install python -y
+Python3 -m pop install --upgrade pip
 fi
 
 if which toilet  &>/dev/null; then
