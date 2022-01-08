@@ -66,6 +66,13 @@ else
 pkg install figlet -y
 fi
 
+if which Python  &>/dev/null; then
+sleep 1
+echo -e "${greenColour}Tsu ...................................................[✓] Instalado ${endColour}"
+else
+pkg install python -y
+fi
+
 if which toilet  &>/dev/null; then
 sleep 1
 echo -e "${greenColour}toilet ...................................................[✓] Instalado ${endColour}"
