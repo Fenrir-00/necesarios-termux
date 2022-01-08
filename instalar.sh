@@ -66,7 +66,7 @@ else
 pkg install figlet -y
 fi
 
-if which Python  &>/dev/null; then
+if which python  &>/dev/null; then
 sleep 1
 echo -e "${greenColour}Tsu ...................................................[✓] Instalado ${endColour}"
 else
