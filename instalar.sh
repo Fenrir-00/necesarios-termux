@@ -74,6 +74,13 @@ pkg install python -y
 Python3 -m pop install --upgrade pip
 fi
 
+if which wget  &>/dev/null; then
+sleep 1
+echo -e "${greenColour}wget ...................................................[✓] Instalado ${endColour}"
+else
+pkg install wget -y
+fi
+
 if which toilet  &>/dev/null; then
 sleep 1
 echo -e "${greenColour}toilet ...................................................[✓] Instalado ${endColour}"
