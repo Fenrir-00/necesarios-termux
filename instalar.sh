@@ -137,6 +137,27 @@ else
 pkg install mpv -y
 fi
 
+if which msfconsole  &>/dev/null; then
+sleep 1
+echo -e "${greenColour}metaesploit ...................................................[✓] Instalado ${endColour}"
+else
+clear
+echo""
+echo -e "${redColour}metaesploit no está instalada...........................................[×] ${endColour}"
+echo -e "${redColour}Esto puede tardar 1 hora.........................................[✓] ${endColour}"
+echo ""
+echo -e "${greenColour} quieres instalar metasploit"
+echo -e "SI [1]"
+echo -e "NO [2]"
+echo -n "que número de opción quieres"
+read elegir
+if [ $elegir -eq 1 ]; then
+wget https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/metasploit.sh
+chmod + x metasploit.sh
+./metasploit.sh
+fi
+fi
+
 #menu
 function menu1(){
 clear
