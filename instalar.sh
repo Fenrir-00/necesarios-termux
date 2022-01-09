@@ -81,6 +81,13 @@ else
 pkg install toilet -y
 fi
 
+if which curl  &>/dev/null; then
+sleep 1
+echo -e "${greenColour}curl ...................................................[✓] Instalado ${endColour}"
+else
+pkg install curl -y
+fi
+
 if which cowsay  &>/dev/null; then
 sleep 1
 echo -e "${greenColour}cowsay ...................................................[✓] Instalado ${endColour}"
