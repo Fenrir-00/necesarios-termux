@@ -143,8 +143,8 @@ echo -e "${greenColour}metaesploit .............................................
 else
 clear
 echo""
-echo -e "${redColour}metaesploit no está instalada...........................................[×] ${endColour}"
-echo -e "${redColour}Esto puede tardar 1 hora.........................................[✓] ${endColour}"
+echo -e "${redColour}           metaesploit no está instalada......................[×] ${endColour}"
+echo -e "${redColour}           Esto puede tardar 1 hora...........................[✓] ${endColour}"
 echo ""
 echo -e "${greenColour} quieres instalar metasploit"
 echo -e "SI [1]"
@@ -153,7 +153,7 @@ echo -n "que número de opción quieres"
 read elegir
 if [ $elegir -eq 1 ]; then
 wget https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/metasploit.sh
-chmod + x metasploit.sh
+chmod +x metasploit.sh
 ./metasploit.sh
 fi
 fi
