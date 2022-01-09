@@ -80,6 +80,12 @@ echo -e "${greenColour}toilet ..................................................
 else
 pkg install toilet -y
 fi
+if which nmap  &>/dev/null; then
+sleep 1
+echo -e "${greenColour}nmap ...................................................[✓] Instalado ${endColour}"
+else
+pkg install nmap -y
+fi
 
 if which curl  &>/dev/null; then
 sleep 1
