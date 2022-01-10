@@ -68,7 +68,7 @@ fi
 
 if which python  &>/dev/null; then
 sleep 1
-echo -e "${greenColour}Tsu ...................................................[✓] Instalado ${endColour}"
+echo -e "${greenColour} pyhton ...................................................[✓] Instalado ${endColour}"
 else
 pkg install python -y
 Python3 -m pop install --upgrade pip
