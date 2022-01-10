@@ -140,6 +140,7 @@ fi
 if which msfconsole  &>/dev/null; then
 sleep 1
 echo -e "${greenColour}metaesploit ...................................................[✓] Instalado ${endColour}"
+sleep 2
 else
 clear
 echo""
