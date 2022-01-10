@@ -71,7 +71,7 @@ sleep 1
 echo -e "${greenColour} pyhton ...................................................[✓] Instalado ${endColour}"
 else
 pkg install python -y
-python3 -m pop install --upgrade pip
+python3 -m pip install --upgrade pip
 fi
 
 if which wget  &>/dev/null; then
