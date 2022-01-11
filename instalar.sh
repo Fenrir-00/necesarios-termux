@@ -157,6 +157,8 @@ wget https://raw.githubusercontent.com/gushmazuko/metasploit_in_termux/master/me
 chmod +x metasploit.sh
 ./metasploit.sh
 gem install lolcat
+clear 
+echo -e "{greenColour}Meta esploit se instalo cierra y escribe : msfconsole   {endColour}"
 fi
 fi
 
